@@ -8,6 +8,7 @@ import {
 } from 'react-native';
 import { RestaurantItem } from '../api';
 import { colors, typography } from '../styles';
+import { isIOS } from '../utils/device';
 
 export interface ListItem {
   item: RestaurantItem;
@@ -47,6 +48,7 @@ const styles = StyleSheet.create({
     fontFamily: typography.FONT_FAMILY_BOLD,
     color: colors.BLACK,
     paddingVertical: 5,
+    fontWeight: isIOS ? 'regular' : 'bold',
   },
   text: {
     fontFamily: typography.FONT_FAMILY_REGULAR,
