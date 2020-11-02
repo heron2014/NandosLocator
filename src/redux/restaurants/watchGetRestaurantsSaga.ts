@@ -10,13 +10,12 @@ import {
 function* getRestaurant() {
   try {
     const response: RestaurantsPayload['data'] = yield call(Api.getAll);
-    console.log('response', response);
     yield put(getRestaurantsSuccess(response.restaurant.items));
   } catch (error) {
     yield put(getRestaurantsFailure('Sorry something is broken'));
   }
 }
 
-export default function* watchGetRestaurants() {
+export default function* watchGetRestaurantsSaga() {
   yield takeLatest(RestaurantsActionTypes.GET_RESTAURANTS, getRestaurant);
 }

@@ -1,6 +1,6 @@
 import { all, fork } from 'redux-saga/effects';
-import getRestaurantsSaga from './restaurants/getRestaurantsSaga';
+import watchGetRestaurantsSaga from './restaurants/watchGetRestaurantsSaga';
 
 export default function* rootSaga() {
-  yield all([fork(getRestaurantsSaga)]);
+  yield all([fork(watchGetRestaurantsSaga)]);
 }
