@@ -8,7 +8,6 @@ import {
 } from 'react-native';
 import { RestaurantItem } from '../api';
 import { colors, typography } from '../styles';
-import { isIOS } from '../utils/device';
 
 export interface ListItem {
   item: RestaurantItem;
