@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
     fontFamily: typography.FONT_FAMILY_BOLD,
     color: colors.BLACK,
     paddingVertical: 5,
-    fontWeight: isIOS ? 'regular' : 'bold',
+    fontWeight: 'bold',
   },
   text: {
     fontFamily: typography.FONT_FAMILY_REGULAR,
