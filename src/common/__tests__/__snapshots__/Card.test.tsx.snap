@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FFFFFF",
+      "borderRadius": 4,
+      "marginBottom": 20,
+      "padding": 10,
+    }
+  }
+>
+  <Text
+    style={
+      Object {
+        "color": "#000000",
+        "fontFamily": "AvenirNext-Bold",
+        "paddingVertical": 5,
+      }
+    }
+  >
+    Nandos name
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontFamily": "Avenir-Medium",
+        "textAlign": "center",
+      }
+    }
+  >
+    Address locality
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontFamily": "Avenir-Medium",
+        "textAlign": "center",
+      }
+    }
+  >
+    High Street
+  </Text>
+  <Text
+    style={
+      Object {
+        "fontFamily": "Avenir-Medium",
+        "textAlign": "center",
+      }
+    }
+  >
+    N1 H9
+  </Text>
+  <View
+    accessible={true}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Array [
+        Object {
+          "backgroundColor": "#ffff00",
+        },
+        Object {
+          "alignItems": "center",
+          "borderRadius": 4,
+          "height": 40,
+          "justifyContent": "center",
+          "marginVertical": 5,
+          "width": "70%",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Object {
+          "fontFamily": "Avenir-Medium",
+          "textAlign": "center",
+        }
+      }
+    >
+      Check it out
+    </Text>
+  </View>
+</View>
+`;

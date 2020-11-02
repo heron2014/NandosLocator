@@ -7,7 +7,7 @@ export interface RestaurantsState {
   restaurants: RestaurantItem[];
 }
 
-const initialState: RestaurantsState = {
+export const initialState: RestaurantsState = {
   isLoading: false,
   error: null,
   restaurants: [],

@@ -1,5 +1,11 @@
 import React, { FC } from 'react';
-import { View, Text, StyleSheet, Pressable, GestureResponderEvent } from 'react-native';
+import {
+  View,
+  Text,
+  StyleSheet,
+  Pressable,
+  GestureResponderEvent,
+} from 'react-native';
 import { RestaurantItem } from '../api';
 import { colors, typography } from '../styles';
 
@@ -9,7 +15,7 @@ export interface ListItem {
 }
 
 const Card: FC<ListItem> = ({ item, onPress }) => {
-  const handleStyleOnPress = ({ pressed }: { pressed: boolean}) => ([
+  const handleStyleOnPress = ({ pressed }: { pressed: boolean }) => ([
     { backgroundColor: pressed ? colors.PRIMARY : colors.SECONDARY},
     styles.button,
   ]);
@@ -44,6 +50,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontFamily: typography.FONT_FAMILY_REGULAR,
+    textAlign: 'center',
   },
   button: {
     marginVertical: 5,
